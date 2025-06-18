@@ -1,5 +1,5 @@
 const wordList = [
-  { japanese: "りんご", english: "An industrial robot with six joints closely resembles a human arm." },
+  { japanese: "関数型プログラミングがソフトウェア開発者の間で注目されている。", english: "Functional programming has been gaining popularity among software developers." },
   { japanese: "走る", english: "run" },
   { japanese: "大きい", english: "big" }
 ];
@@ -39,7 +39,7 @@ function showAnswer(index) {
   // 読み上げ機能
   const utterance = new SpeechSynthesisUtterance(english);
   utterance.lang = "en-US"; // アメリカ英語の音声で読み上げ
-  utterance.rate = 0.5;
+  utterance.rate = 1;
   speechSynthesis.speak(utterance);
 }
 

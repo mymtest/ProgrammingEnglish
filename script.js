@@ -39,7 +39,7 @@ function showAnswer(index) {
   // 読み上げ機能
   const utterance = new SpeechSynthesisUtterance(english);
   utterance.lang = "en-US"; // アメリカ英語の音声で読み上げ
-  utterance.rate = 1;
+  utterance.rate = 0.5;
   speechSynthesis.speak(utterance);
 }
 
